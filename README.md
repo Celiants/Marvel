@@ -3,6 +3,7 @@
 
 # Site Marvel
 
+Mon projet est réalisé en HTML et CSS ainsi que du JS
 
 ### Page d'accueil
 
