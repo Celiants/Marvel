@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="Author" lang="fr" content="Celia" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Projet Marvel">
+		<meta name="robots" content="index, follow">
+		<title>Marvel</title>
+	
+		<link rel="stylesheet" href="../style/Serie.css"/>
+	
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"/>
+		<link href="https://icons.iconarchive.com/icons/dominicanjoker/comic-publisher-folder/512/Marvel-icon.png" rel="icon" type="image/x-icon"/>
+	</head>
+	<body>
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<span>
+						<img src="../img/accueil/logo.png" alt="Logo Menu">
+					</span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="./Personnage.html">Personnage</a>
+						</li>
+						<li>
+							<a href="./Film.html">Film</a>
+						</li>
+						<li>
+							<a href="./Serie.html">Série</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icone">
+					<ion-icon name="home" onclick="redirection()"></ion-icon>
+					<ion-icon name="search" onclick="filtre()"></ion-icon>
+					<input type="text" id="barreRecherche" placeholder="Rechercher...">
+				</div>
+			</div>
+		</header>
+
+		<h2 class="tit">Series dans l'ordre de parution</h2>
+		<section class="esb-serie">
+			
+			<div class="cadre wandaVision">
+				<img src="../img/imageSerie/WandaVision.jpg" alt="WandaVision">
+				<p class="titre">WandaVision</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre falconSoldat">
+				<a href="./FalconHiver.html">
+				<img src="../img/imageSerie/FalconSoldat.jpg" alt="FalconSoldat"></a>
+				<p class="titre"></p>Falcon et le Soldat de l'hiver</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre loki">
+				<img src="../img/imageSerie/Loki1.jpg" alt="Loki1">
+				<p class="titre"></p>Loki | saison 1</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre whatIf">
+				<img src="../img/imageSerie/WhatIf.jpg" alt="WhatIf">
+				<p class="titre"></p>What If | saison 1</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre hawkeye">
+				<img src="../img/imageSerie/Hawkeye.jpg" alt="Hawkeye">
+				<p class="titre"></p>Hawkeye</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre moonKnight">
+				<img src="../img/imageSerie/MoonKnight.jpg" alt="MoonKnight">
+				<p class="titre"></p>Moon Knight</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre msMarvel">
+				<img src="../img/imageSerie/MsMarvel.jpg" alt="MsMarvel">
+				<p class="titre"></p>Miss Marvel</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre groot">
+				<img src="../img/imageSerie/Groot.jpg" alt="Groot">
+				<p class="titre"></p>I am Groot</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre sheHulk">
+				<img src="../img/imageSerie/SheHulk.jpg" alt="SheHulk">
+				<p class="titre"></p>She Hulk</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre werewolf">
+				<img src="../img/imageSerie/Werewolf.jpg" alt="Werewolf">
+				<p class="titre"></p>Werewolf by night</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre guardiansGalaxyHoliday">
+				<img src="../img/imageSerie/GuardiansGalaxyHoliday.jpg" alt="GuardiansGalaxyHoliday">
+				<p class="titre"></p>Les Gardiens de la Galaxie : Joyeuses Fêtes</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre secretInvasion">
+				<img src="../img/imageSerie/SecretInvasion.jpg" alt="SecretInvasion">
+				<p class="titre"></p>Secret Invasion</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre groot">
+				<img src="../img/imageSerie/Groot2.jpg" alt="Groot2">
+				<p class="titre"></p>I am Groot | saison 2</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre loki">
+				<img src="../img/imageSerie/Loki2.jpg" alt="Loki2">
+				<p class="titre"></p>Loki | saison 2</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre whatIf">
+				<img src="../img/imageSerie/WhatIf2.jpg" alt="WhatIf2">
+				<p class="titre"></p>What If | saison 2</p>
+				<p class="date">2023</p>
+			</div>
+		
+		</section>
+
+		<h2 class="tit">Films dans l'ordre de l'histoire du <a href="https://fr.wikipedia.org/wiki/Univers_cin%C3%A9matographique_Marvel">MCU</a></h2>
+		<section class="esb-serie">
+			
+			<div class="cadre groot">
+				<img src="../img/imageSerie/Groot.jpg" alt="Groot">
+				<p class="titre"></p>I am Groot</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre loki">
+				<img src="../img/imageSerie/Loki1.jpg" alt="Loki1">
+				<p class="titre"></p>Loki</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre whatIf">
+				<img src="../img/imageSerie/WhatIf.jpg" alt="WhatIf">
+				<p class="titre"></p>What If</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre wandaVision">
+				<img src="../img/imageSerie/WandaVision.jpg" alt="WandaVision">
+				<p class="titre"></p>WandaVision</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre falconSoldat">
+				<img src="../img/imageSerie/FalconSoldat.jpg" alt="FalconSoldat">
+				<p class="titre"></p>Falcon et le Soldat de l'hiver</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre sheHulk">
+				<img src="../img/imageSerie/SheHulk.jpg" alt="SheHulk">
+				<p class="titre"></p>She Hulk</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre hawkeye">
+				<img src="../img/imageSerie/Hawkeye.jpg" alt="Hawkeye">
+				<p class="titre"></p>Hawkeye</p>
+				<p class="date">2021</p>
+			</div>
+
+			<div class="cadre moonKnight">
+				<img src="../img/imageSerie/MoonKnight.jpg" alt="MoonKnight">
+				<p class="titre"></p>Moon Knight</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre msMarvel">
+				<img src="../img/imageSerie/MsMarvel.jpg" alt="MsMarvel">
+				<p class="titre"></p>Miss Marvel</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre werewolf">
+				<img src="../img/imageSerie/Werewolf.jpg" alt="Werewolf">
+				<p class="titre"></p>Werewolf by night</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre guardiansGalaxyHoliday">
+				<img src="../img/imageSerie/GuardiansGalaxyHoliday.jpg" alt="GuardiansGalaxyHoliday">
+				<p class="titre"></p>Les Gardiens de la Galaxie : Joyeuses Fêtes</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre secretInvasion">
+				<img src="../img/imageSerie/SecretInvasion.jpg" alt="SecretInvasion">
+				<p class="titre"></p>Secret Invasion</p>
+				<p class="date">2023</p>
+			</div>
+		</section>
+		<footer>
+			<p>&copy; 2023 Série Marvel </p>
+		</footer>
+
+		<script src="../animation/redirection.js"></script>
+
+		<script>
+			function filtre() {
+				
+				var recherche = document.getElementById("barreRecherche").value;
+
+				if (recherche == "WandaVision") {
+					var wandaVision = document.getElementsByClassName("wandaVision");
+					for (var i = 0; i < wandaVision.length; i++) {
+						wandaVision[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre wandaVision") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Falcon et le Soldat de l'hiver") {
+					var falconSoldat = document.getElementsByClassName("falconSoldat");
+					for (var i = 0; i < falconSoldat.length; i++) {
+						falconSoldat[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre falconSoldat") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Loki") {
+					var loki = document.getElementsByClassName("loki");
+					for (var i = 0; i < loki.length; i++) {
+						loki[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre loki") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+				
+				if (recherche == "What If") {
+					var whatIf = document.getElementsByClassName("whatIf");
+					for (var i = 0; i < whatIf.length; i++) {
+						whatIf[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre whatIf") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Hawkeye") {
+					var hawkeye = document.getElementsByClassName("hawkeye");
+					for (var i = 0; i < hawkeye.length; i++) {
+						hawkeye[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre hawkeye") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Moon Knight") {
+					var moonKnight = document.getElementsByClassName("moonKnight");
+					for (var i = 0; i < moonKnight.length; i++) {
+						moonKnight[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre moonKnight") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Miss Marvel") {
+					var msMarvel = document.getElementsByClassName("msMarvel");
+					for (var i = 0; i < msMarvel.length; i++) {
+						msMarvel[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre msMarvel") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Groot") {
+					var groot = document.getElementsByClassName("groot");
+					for (var i = 0; i < groot.length; i++) {
+						groot[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre groot") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "She Hulk") {
+					var sheHulk = document.getElementsByClassName("sheHulk");
+					for (var i = 0; i < sheHulk.length; i++) {
+						sheHulk[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre sheHulk") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Werewolf by night") {
+					var werewolf = document.getElementsByClassName("werewolf");
+					for (var i = 0; i < werewolf.length; i++) {
+						werewolf[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre werewolf") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Les Gardiens de la Galaxie") {
+					var guardiansGalaxyHoliday = document.getElementsByClassName("guardiansGalaxyHoliday");
+					for (var i = 0; i < guardiansGalaxyHoliday.length; i++) {
+						guardiansGalaxyHoliday[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre guardiansGalaxyHoliday") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+				if (recherche == "Secret Invasion") {
+					var secretInvasion = document.getElementsByClassName("secretInvasion");
+					for (var i = 0; i < secretInvasion.length; i++) {
+						secretInvasion[i].style.display = "block";
+
+						var elements = document.getElementsByClassName("cadre");
+						for (var j = 0; j < elements.length; j++) {
+							if (elements[j].className != "cadre secretInvasion") {
+								elements[j].style.display = "none";
+							}
+						}
+					}
+				}
+
+			}
+		</script>
+	</body>
+</html>

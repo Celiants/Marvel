@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="Author" lang="fr" content="Celia" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Projet Marvel">
+		<meta name="robots" content="index, follow">
+		<title>Marvel</title>
+
+		<link rel="stylesheet" href="../style/Serie.css"/>
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"/>
+		<link href="https://icons.iconarchive.com/icons/dominicanjoker/comic-publisher-folder/512/Marvel-icon.png" rel="icon" type="image/x-icon"/>
+	</head>
+	<body>
+
+		<header>
+			<div class="navbar">
+				<div class="logo">
+					<span>
+						<img src="../img/accueil/logo.png" alt="Logo Menu">
+					</span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="./Personnage.html">Personnage</a>
+						</li>
+						<li>
+							<a href="./Film.html">Film</a>
+						</li>
+						<li>
+							<a href="./Serie.html">Série</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icone">
+					<ion-icon name="home" onclick="redirection()"></ion-icon>
+					<ion-icon name="search" onclick="filtre()"></ion-icon>
+					<input type="text" id="barreRecherche" placeholder="Rechercher...">
+				</div>
+			</div>
+		</header>
+
+		<h2 class="tit">Films dans l'ordre de parution</h2>
+		<section class="esb-serie">
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan.jpg" alt="IronMan">
+				<p class="titre"></p>Iron Man</p>
+				<p class="date">2008</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Hulk.jpg" alt="Hulk">
+				<p class="titre"></p>L'incroyable Hulk</p>
+				<p class="date">2008</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan2.jpg" alt="IronMan2">
+				<p class="titre"></p>Iron Man 2</p>
+				<p class="date">2010</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor.jpg" alt="Thor">
+				<p class="titre"></p>Thor</p>
+				<p class="date">2011</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CAFirst.jpg" alt="CAFirst">
+				<p class="titre"></p>Captain America First Avenger</p>
+				<p class="date">2011</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Avengers.jpg" alt="Avengers">
+				<p class="titre"></p>Avengers</p>
+				<p class="date">2012</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor2.jpg" alt="Thor2">
+				<p class="titre"></p>Thor Le Monde des Ténèbres</p>
+				<p class="date">2013</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan3.jpg" alt="IronMan3">
+				<p class="titre"></p>Iron Man 3</p>
+				<p class="date">2013</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CAHiver.jpg" alt="CAHiver">
+				<p class="titre"></p>Captain America le Soldat de l'Hiver</p>
+				<p class="date">2014</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG1.jpg" alt="GG1">
+				<p class="titre"></p>Les Gardiens de la Galaxie</p>
+				<p class="date">2014</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersUltron.jpg" alt="AvengersUltron">
+				<p class="titre"></p>Avengers L'ère d'Ultron</p>
+				<p class="date">2015</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan1.jpg" alt="AntMan1">
+				<p class="titre"></p>Ant Man</p>
+				<p class="date">2015</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CACivilWar.jpg" alt="CACivilWar">
+				<p class="titre"></p>Captain America Civil War</p>
+				<p class="date">2016</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/DoctorStrange.jpg" alt="DoctorStrange">
+				<p class="titre"></p>Doctor Strange</p>
+				<p class="date">2016</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG2.jpg" alt="GG2">
+				<p class="titre"></p>Les Gardiens de la Galaxie Vol.2</p>
+				<p class="date">2017</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManHomecoming.jpg" alt="SpiderManHomecoming">
+				<p class="titre"></p>Spider Man Homecoming</p>
+				<p class="date">2017</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor3.jpg" alt="Thor3">
+				<p class="titre"></p>Thor Ragnarok</p>
+				<p class="date">2017</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackPanther.jpg" alt="BlackPanther">
+				<p class="titre"></p>Black Panther</p>
+				<p class="date">2018</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan2.jpg" alt="AntMan2">
+				<p class="titre"></p>Ant Man et la Guèpe</p>
+				<p class="date">2018</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersInfinityWar.jpg" alt="AvengersInfinityWar">
+				<p class="titre"></p>Avengers Infinity War</p>
+				<p class="date">2018</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CM.jpg" alt="Captain Marvel">
+				<p class="titre"></p>Captain Marvel</p>
+				<p class="date">2019</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersEndgame.jpg" alt="AvengersEndgame">
+				<p class="titre"></p>Avengers Endgame</p>
+				<p class="date">2019</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManFFH.jpg" alt="SpiderManFFH">
+				<p class="titre"></p>Spider Man Far From Home</p>
+				<p class="date">2019</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackWidow.jpg" alt="BlackWidow">
+				<p class="titre"></p>BlackWidow</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/ShangShi.jpg" alt="ShangShi">
+				<p class="titre"></p>Shang Shi et la Légende des Dix Anneaux</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Eternels.jpg" alt="Eternels">
+				<p class="titre"></p>Les éternels</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManNWH.jpg" alt="SpiderManNWH">
+				<p class="titre"></p>Spider Man No Way Home</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/DoctorStrange2.jpg" alt="DoctorStrange2">
+				<p class="titre"></p>Doctor Strange 2 in the Multiverse of Madness</p>
+				<p class="date">2022</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor4.jpg" alt="Thor4">
+				<p class="titre"></p>Thor Love & Thunder</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackPanther2.jpg" alt="BlackPanther2">
+				<p class="titre"></p>Black Panther Wakanda Forever</p>
+				<p class="date">2022</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan3.jpg" alt="AntMan3">
+				<p class="titre"></p>Ant Man et la Guêpe Quantumania</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG3.jpg" alt="GG3">
+				<p class="titre"></p>Les Gardiens de la Galaxie Vol.3</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/TheMarvels.jpg" alt="TheMarvels">
+				<p class="titre"></p>The Marvels</p>
+				<p class="date">2023</p>
+			</div>
+			
+		</section>
+
+		<h2 class="tit">Films dans l'ordre de l'histoire du <a href="https://fr.wikipedia.org/wiki/Univers_cin%C3%A9matographique_Marvel">MCU</a></h2>
+		<section class="esb-serie">
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CAFirst.jpg" alt="CAFirst">
+				<p class="titre"></p>Captain America First Avenger</p>
+				<p class="date">2011</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CM.jpg" alt="Captain Marvel">
+				<p class="titre"></p>Captain Marvel</p>
+				<p class="date">2019</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan.jpg" alt="IronMan">
+				<p class="titre"></p>Iron Man</p>
+				<p class="date">2008</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan2.jpg" alt="IronMan2">
+				<p class="titre"></p>Iron Man 2</p>
+				<p class="date">2010</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor.jpg" alt="Thor">
+				<p class="titre"></p>Thor</p>
+				<p class="date">2011</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Hulk.jpg" alt="Hulk">
+				<p class="titre"></p>L'incroyable Hulk</p>
+				<p class="date">2008</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Avengers.jpg" alt="Avengers">
+				<p class="titre"></p>Avengers</p>
+				<p class="date">2012</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor2.jpg" alt="Thor2">
+				<p class="titre"></p>Thor Le Monde des Ténèbres</p>
+				<p class="date">2013</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/IronMan3.jpg" alt="IronMan3">
+				<p class="titre"></p>Iron Man 3</p>
+				<p class="date">2013</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CAHiver.jpg" alt="CAHiver">
+				<p class="titre"></p>Captain America le Soldat de l'Hiver</p>
+				<p class="date">2014</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG1.jpg" alt="GG1">
+				<p class="titre"></p>Les Gardiens de la Galaxie</p>
+				<p class="date">2014</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG2.jpg" alt="GG2">
+				<p class="titre"></p>Les Gardiens de la Galaxie Vol.2</p>
+				<p class="date">2017</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersUltron.jpg" alt="AvengersUltron">
+				<p class="titre"></p>Avengers L'ère d'Ultron</p>
+				<p class="date">2015</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan1.jpg" alt="AntMan1">
+				<p class="titre"></p>Ant Man</p>
+				<p class="date">2015</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/CACivilWar.jpg" alt="CACivilWar">
+				<p class="titre"></p>Captain America Civil War</p>
+				<p class="date">2016</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackWidow.jpg" alt="BlackWidow">
+				<p class="titre"></p>BlackWidow</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackPanther.jpg" alt="BlackPanther">
+				<p class="titre"></p>Black Panther</p>
+				<p class="date">2018</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManHomecoming.jpg" alt="SpiderManHomecoming">
+				<p class="titre"></p>Spider Man Homecoming</p>
+				<p class="date">2017</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/DoctorStrange.jpg" alt="DoctorStrange">
+				<p class="titre"></p>Doctor Strange</p>
+				<p class="date">2016</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor3.jpg" alt="Thor3">
+				<p class="titre"></p>Thor Ragnarok</p>
+				<p class="date">2017</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan2.jpg" alt="AntMan2">
+				<p class="titre"></p>Ant Man et la Guèpe</p>
+				<p class="date">2018</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersInfinityWar.jpg" alt="AvengersInfinityWar">
+				<p class="titre"></p>Avengers Infinity War</p>
+				<p class="date">2018</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AvengersEndgame.jpg" alt="AvengersEndgame">
+				<p class="titre"></p>Avengers Endgame</p>
+				<p class="date">2019</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/ShangShi.jpg" alt="ShangShi">
+				<p class="titre"></p>Shang Shi et la Légende des Dix Anneaux</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Eternels.jpg" alt="Eternels">
+				<p class="titre"></p>Les éternels</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManFFH.jpg" alt="SpiderManFFH">
+				<p class="titre"></p>Spider Man Far From Home</p>
+				<p class="date">2019</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/SpiderManNWH.jpg" alt="SpiderManNWH">
+				<p class="titre"></p>Spider Man No Way Home</p>
+				<p class="date">2021</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/DoctorStrange2.jpg" alt="DoctorStrange2">
+				<p class="titre"></p>Doctor Strange 2 in the Multiverse of Madness</p>
+				<p class="date">2022</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/Thor4.jpg" alt="Thor4">
+				<p class="titre"></p>Thor Love & Thunder</p>
+				<p class="date">2022</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/BlackPanther2.jpg" alt="BlackPanther2">
+				<p class="titre"></p>Black Panther Wakanda Forever</p>
+				<p class="date">2022</p>
+			</div>
+			
+			<div class="cadre">
+				<img src=" ../img/imageFilm/AntMan3.jpg" alt="AntMan3">
+				<p class="titre"></p>Ant Man et la Guêpe Quantumania</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/GG3.jpg" alt="GG3">
+				<p class="titre"></p>Les Gardiens de la Galaxie Vol.3</p>
+				<p class="date">2023</p>
+			</div>
+
+			<div class="cadre">
+				<img src=" ../img/imageFilm/TheMarvels.jpg" alt="TheMarvels">
+				<p class="titre"></p>The Marvels</p>
+				<p class="date">2023</p>
+			</div>
+			
+		
+		</section>
+
+		<footer>
+			<p>&copy; 2023 Film Marvel </p>
+		</footer>
+
+	</body>
+	</html>

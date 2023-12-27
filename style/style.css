@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	margin-bottom: 800px;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100vh;
+	font-family: 'Poppins',sans-serif;
+}
+
+.navbar {
+	display: flex;
+	z-index: 1;
+	position: relative;
+	align-items: center;
+	justify-content: space-between;
+	width: 80%;
+	margin: 41px 159px;
+}
+
+.logo img {
+	width: 170px;
+	height: 100px;
+}
+
+.logo,
+.icone {
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 30%;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.menu ul {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.menu ul li {
+	margin: 0 10px;
+	list-style: none;
+	cursor: pointer;
+}
+
+.menu ul li a {
+	text-decoration: none;
+	color: #000;
+}
+
+.menu ul li:hover {
+	border-bottom: 2px solid red;
+}
+
+.icone {
+	padding: 10px 18px;
+}
+
+input {
+	width: 150px;
+	height: 30px;
+	padding: 0 10px;
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	border: 1px solid #000;
+}
+
+.images {
+	display: flex;
+	z-index: 1;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.img {
+	width: 140px;
+	height: 300px;
+	margin: 40px;
+	cursor: pointer;
+}
+
+.images .img:hover {
+	filter: grayscale(1);
+}
+
+.img-1 {
+	background: url(../img/accueil/america.jpeg) 50% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.0);
+}
+
+.img-2 {
+	background: url(../img/accueil/black.jpeg) 50% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.4);
+}
+
+.img-3 {
+	background: url(../img/accueil/iron.jpeg) 70% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.1);
+}
+
+.img-4 {
+	background: url(../img/accueil/captain.jpeg) 50% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.4);
+}
+
+.img-5 {
+	background: url(../img/accueil/thor.jpeg) 50% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.1);
+}
+
+.img-6 {
+	background: url(https://www.marvel-cineverse.fr/medias/images/doctorstrange-dsmom-imgprofil-1.jpg) 50% 50% no-repeat;
+	background-size: cover;
+	transform: scale(1.4);
+}
+
+.title span {
+	z-index: 2;
+	position: absolute;
+	top: 40%;
+	left: 18%;
+	text-transform: uppercase;
+	font-size: 150px;
+	font-weight: bolder;
+	letter-spacing: 115px;
+	color: red;
+}
+
+.side-icon {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	right: 41px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	transform: translateY(-50%);
+}
+
+.side-icon .icn {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+.bottom-bar {
+	display: flex;
+	position: absolute;
+	bottom: 40px;
+	justify-content: space-around;
+	width: 100%;
+	margin: 20px auto;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	color: #000;
+}
+
+.media ul {
+	position: fixed;
+	top: 65%;
+	right: 41px;
+	padding: 10px 10px;
+	list-style: none;
+}
+
+.media ul li {
+	margin: 24px 0;
+	font-size: 24px;
+}
+
+.media ul li a {
+	text-decoration: none;
+	color: #000;
+}

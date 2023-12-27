@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="Author" lang="fr" content="Celia" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<meta name="description" content="Projet Marvel">
+		<meta name="robots" content="index, follow">
+		<title>Marvel</title>
+
+		<link rel="stylesheet" href="./style/style.css"/>
+
+		<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap" rel="stylesheet"/>
+		<link href="https://icons.iconarchive.com/icons/dominicanjoker/comic-publisher-folder/512/Marvel-icon.png" rel="icon" type="image/x-icon"/>
+	</head>
+	<body>
+		<div class="container">
+			<div class="navbar">
+				<div class="logo">
+					<span>
+						<img src="./img/accueil/logo.png" alt="Logo Menu"/>
+					</span>
+				</div>
+				<div class="menu">
+					<ul>
+						<li>
+							<a href="./contenu/Personnage.html">Personnage</a>
+						</li>
+						<li>
+							<a href="./contenu/Film.html">Film</a>
+						</li>
+						<li>
+							<a href="./contenu/Serie.html">Série</a>
+						</li>
+					</ul>
+				</div>
+				<div class="icone">
+					<ion-icon name="search" onclick="redirection()"></ion-icon>&nbsp;&nbsp;&nbsp;
+					<input type="text" id="barreRecherche" placeholder="Rechercher...">
+				</div>
+			</div>
+			<div class="images">
+				<div class="img img-1"></div>
+				<div class="img img-2"></div>
+				<div class="img img-3"></div>
+				<div class="img img-4"></div>
+				<div class="img img-5"></div>
+				<div class="img img-6"></div>
+			</div>
+			<div class="title">
+				<span>marvel</span>
+			</div>
+			<div class="media">
+				<ul>
+					<li>
+						<a href="https://github.com/Celiants">
+							<ion-icon name="logo-github"></ion-icon>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.linkedin.com/in/célia-antunes-ants/">
+							<ion-icon name="logo-linkedin"></ion-icon>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<footer class="bottom-bar">
+				<p>© 2023 Page Marvel</p>
+			</footer>
+		</div>
+		<script src="./animation/chargement.js"></script>
+		<script>
+			function redirection() {
+				var searchQuery = document.getElementById("barreRecherche").value;
+
+				if (searchQuery == "Personnage") {
+					window.location.href = "./contenu/Personnage.html";
+				} else if (searchQuery == "Série") {
+					window.location.href = "./contenu/Serie.html";
+				} else if (searchQuery == "Film") {
+					window.location.href = "./contenu/Film.html";
+				}
+			}
+		</script>
+	</body>
+</html>
