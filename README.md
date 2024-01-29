@@ -3,7 +3,8 @@
 
 # Site Marvel
 
-Mon projet est réalisé en HTML et CSS ainsi que du JS
+Mon projet est réalisé en HTML et CSS ainsi que du JS.
+Pour y accéder cliquez sur de la catégorie à droite de cette page, puis cliquez sur le lien URL affiché.
 
 ### Page d'accueil
 
